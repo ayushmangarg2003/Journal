@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import { writers } from '../assets/data/doctors'
+import { writers } from '../assets/data/users'
 import AuthorCard from '../components/AuthorCard/AuthorCard'
-import Shimmer from '../components/Shimmer/Shimmer';
+import ShimmerShort from '../components/Shimmer/ShimmerShort';
 
-const Contact = () => {
+
+const Writers = () => {
   const [search, setSearch] = useState("")
   const [loading, setLoading] = useState(true)
 
@@ -25,21 +26,21 @@ const Contact = () => {
 
   return <>
 
-        <div className="doctors-parent">
-          {
-            loading ? (<Shimmer />) : (
-              <div className='doctors-container'>
-                {
-                  filtered.map((item) => (
-                    <AuthorCard key={item._id} doc={item} search={search} />
-                  ))
-                }
-              </div>
-            )
-          }
-        </div >
+    <div className="doctors-parent">
+      {
+        loading ? (<ShimmerShort />) : (
+          <div className='doctors-container'>
+            {
+              filtered.map((item) => (
+                <AuthorCard key={item._id} doc={item} search={search} />
+              ))
+            }
+          </div>
+        )
+      }
+    </div >
   </>
 
 }
 
-export default Contact
+export default Writers

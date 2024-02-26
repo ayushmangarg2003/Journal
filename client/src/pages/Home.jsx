@@ -1,7 +1,7 @@
 import React from 'react'
 
 import {Link} from "react-router-dom"
-import { DOCTORS, HOME_DESC, HOME_HEAD, SATISFACTION, YEARS, HOMEBTNTEXT } from '../assets/utils'
+import { DOCTORS, HOME_DESC, HOME_HEAD, SATISFACTION, YEARS, HOMEBTNTEXT } from '../assets/data/utils'
 import homeIMG from "../assets/images/about.webp"
 
 const Home = () => {

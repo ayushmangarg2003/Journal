@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
-import { COMPANY_NAME_1, COMPANY_NAME_2 } from '../../assets/utils';
+import { COMPANY_NAME_1, COMPANY_NAME_2 } from '../../assets/data/utils';
 import { useAuthContext } from '../../hooks/useAuthContext'
 
 const Navbar = () => {
@@ -25,10 +25,10 @@ const Navbar = () => {
             <div className={state ? "nav-center active" : "nav-center"}>
                 {/* Navlinks */}
                 <div className="navlink" onClick={handleClick} ><Link className='navlink-link' to={'/'}>Home</Link></div>
-                <div className="navlink" onClick={handleClick} ><Link className='navlink-link' to={'/doctors'}>Journals</Link></div>
+                <div className="navlink" onClick={handleClick} ><Link className='navlink-link' to={'/journals'}>Journals</Link></div>
                 <div className="navlink" onClick={handleClick} ><Link className='navlink-link' to={'/services'}>Subjects</Link></div>
                 <div className="navlink" onClick={handleClick} ><Link className='navlink-link' to={'/about'}>About</Link></div>
-                <div className="navlink" onClick={handleClick} ><Link className='navlink-link' to={'/contact'}>Authors</Link></div>
+                <div className="navlink" onClick={handleClick} ><Link className='navlink-link' to={'/authors'}>Authors</Link></div>
             </div>
 
             <div className="nav-right">

@@ -2,7 +2,7 @@ import React from 'react'
 import { ShimmerContentBlock } from "react-shimmer-effects-18";
 const Shimmer = () => {
     return (
-        <>
+        <div style={{padding:'4rem'}}>
             <ShimmerContentBlock
                 title
                 text
@@ -18,7 +18,7 @@ const Shimmer = () => {
                 thumbnailWidth={150}
                 thumbnailHeight={150}
             />
-        </>
+        </div>
     )
 };
 export default Shimmer

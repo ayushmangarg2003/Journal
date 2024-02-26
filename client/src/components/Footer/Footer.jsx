@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { LINKEDIN, TWITTER, GITHUB, INSTAGRAM, COMPANY_NAME_1, COMPANY_NAME_2, COPYRIGHT } from '../../assets/utils'
+import { LINKEDIN, TWITTER, GITHUB, INSTAGRAM, COMPANY_NAME_1, COMPANY_NAME_2, COPYRIGHT } from '../../assets/data/utils'
 const Footer = () => {
     return (
         <div className='footer'>
