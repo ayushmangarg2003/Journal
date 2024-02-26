@@ -12,10 +12,10 @@ const Doctors = () => {
   const [doc, setDoc] = useState(doctors)
   useEffect(() => {
     try {
-      axios.get(`${backendLink}/api/doctor/doctorData`).then((res) => {
+      // axios.get(`${backendLink}/api/doctor/doctorData`).then((res) => {
         // setDoc(res.data)
         setLoading(false)
-      })
+      // })
     } catch (error) {
       console.log(error);
     }
