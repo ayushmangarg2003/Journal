@@ -34,8 +34,8 @@ const Register = () => {
         <div className='register-labels'>
           <label className='role-label'>
             <select name="role" value={role} onChange={(e) => setRole(e.target.value)}>
-              <option value="patient">Patient</option>
-              <option value="doctor">Doctor</option>
+              <option value="patient">Reader</option>
+              <option value="doctor">Publisher</option>
             </select>
           </label>
 

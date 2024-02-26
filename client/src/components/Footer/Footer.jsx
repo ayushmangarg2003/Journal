@@ -6,7 +6,7 @@ const Footer = () => {
         <div className='footer'>
             <div className="footer-left">
                 <div className="footer-logo">
-                    <div className="footer-logo-img"><i className="fa-solid fa-user-doctor" /></div>
+                    <div className="footer-logo-img"><i class="fa-solid fa-book"></i></div>
                     <div className="footer-logo-name">{COMPANY_NAME_1}<p>{COMPANY_NAME_2}</p></div>
                 </div>
                 <div className="footer-copyright">{COPYRIGHT}</div>
