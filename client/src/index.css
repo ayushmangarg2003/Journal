@@ -7,7 +7,7 @@
 
 /* Variables */
 :root {
-    --yellow: rgb(255, 228, 75);
+    --yellow:#cd7378;
     --wide: 'Montserrat', sans-serif;
     --normal: 'Roboto', sans-serif;
     --black: #151515;
@@ -651,6 +651,7 @@
         .stats {
             display: flex;
             justify-content: space-around;
+            font-size: 18px;
 
             .patients {
                 width: 50%;
@@ -660,7 +661,8 @@
 
                 .patient-logo {
                     color: var(--blue);
-                    font-size: 1.25rem;
+                    font-size: 1rem;
+                    font-weight: bold;
 
                 }
             }
@@ -672,9 +674,9 @@
                 align-items: center;
 
                 .rating-logo {
-                    color: var(--yellow);
-                    font-size: 1.25rem;
-                }
+                    color: rgb(255, 217, 0);
+                    font-size: 1rem;
+                    font-weight: bold;                }
             }
         }
 
@@ -690,8 +692,8 @@
 
                 .icon {
                     color: var(--green);
-                    font-size: 1.25rem;
-
+                    font-size: 1rem;
+                    font-weight: bold;
                 }
             }
 
@@ -703,8 +705,8 @@
 
                 .icon {
                     color: var(--red);
-                    font-size: 1.25rem;
-
+                    font-size: 1rem;
+                    font-weight: bold;
                 }
             }
         }

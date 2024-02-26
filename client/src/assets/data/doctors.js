@@ -15,21 +15,24 @@ export const doctors = [
   },
 ];
 
-// Post Request at http://localhost:4000/api/doctor/register
-
-
-//  SAMPLE BODY 
-// {
-//   "name": "Dr. Ayushman",
-//   "email":"ayush@gmail.com",
-//   "password":"random123",
-//   "speciality": "Surgeon",
-//   "rating": "5",
-//   "img": "https://source.unsplash.com/featured/300x300/?doctor",
-//   "patients": "5000",
-//   "hospital": "medanta",
-//   "city": "Delhi"
-// }
+export const writers = [
+  {
+    name: "Ayushman Garg",
+    specialty: "Science" ,
+    rating: 9.5,
+    img: "https://source.unsplash.com/featured/250x250/?science",
+    patients: 100,
+    city: "India",
+  },
+  {
+    name: "Pranav",
+    specialty: "Snapchat" ,
+    rating: 1.5,
+    img: "https://source.unsplash.com/featured/250x250/?cats",
+    patients: 10,
+    city: "India",
+  },
+]
 
 
 

@@ -1,24 +1,45 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { writers } from '../assets/data/doctors'
+import AuthorCard from '../components/AuthorCard/AuthorCard'
+import Shimmer from '../components/Shimmer/Shimmer';
 
 const Contact = () => {
-  return (
-    <div className="contact-container">
-      <div className="section-heading">CONTACT</div>
-      <div className='contact-parent'>
-        <div className='contact-form'>
-          <div className='form-left'>
-            <input className='form-input' placeholder="Your Name" />
-            <input className='form-input' placeholder="Your Email" />
-            <input className='form-input' placeholder="Subject" />
-          </div>
-          <div className='form-right'>
-            <textarea className='form-textarea' placeholder="Your Message" />
-            <button className='form-btn'>Send</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  )
+  const [search, setSearch] = useState("")
+  const [loading, setLoading] = useState(true)
+
+  const [doc, setDoc] = useState(writers)
+  useEffect(() => {
+    try {
+      setLoading(false)
+    } catch (error) {
+      console.log(error);
+    }
+  }, [])
+
+  let filtered = [];
+  for (let i = 0; i < doc.length; i++) {
+    if (doc[i].name.toLowerCase().includes(search.toLowerCase()) || doc[i].speciality.toLowerCase().includes(search.toLowerCase()) || doc[i].hospital.toLowerCase().includes(search.toLowerCase()) || doc[i].city.toLowerCase().includes(search.toLowerCase())) {
+      filtered = [...filtered, doc[i]];
+    }
+  }
+
+  return <>
+
+        <div className="doctors-parent">
+          {
+            loading ? (<Shimmer />) : (
+              <div className='doctors-container'>
+                {
+                  filtered.map((item) => (
+                    <AuthorCard key={item._id} doc={item} search={search} />
+                  ))
+                }
+              </div>
+            )
+          }
+        </div >
+  </>
+
 }
 
 export default Contact

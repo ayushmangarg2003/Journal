@@ -28,7 +28,7 @@ const Navbar = () => {
                 <div className="navlink" onClick={handleClick} ><Link className='navlink-link' to={'/doctors'}>Journals</Link></div>
                 <div className="navlink" onClick={handleClick} ><Link className='navlink-link' to={'/services'}>Subjects</Link></div>
                 <div className="navlink" onClick={handleClick} ><Link className='navlink-link' to={'/about'}>About</Link></div>
-                <div className="navlink" onClick={handleClick} ><Link className='navlink-link' to={'/contact'}>Contact</Link></div>
+                <div className="navlink" onClick={handleClick} ><Link className='navlink-link' to={'/contact'}>Authors</Link></div>
             </div>
 
             <div className="nav-right">
