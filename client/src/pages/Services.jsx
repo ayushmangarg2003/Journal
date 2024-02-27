@@ -5,7 +5,7 @@ import ServiceCard from '../components/ServiceCard'
 const Services = () => {
   return (
     <div className="services-parent">
-      <div className="section-heading">SERVICES</div>
+      <div className="section-heading">SUBJECTS</div>
       <div className='services-container'>
         {
           services.map((item) => (

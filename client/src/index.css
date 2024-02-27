@@ -1263,6 +1263,23 @@
                 }
             }
         }
+        .single{
+            width: 100%;
+        }
+        .single-email{
+            font-size: 22px;
+        }
+        .single-name{
+            font-size: 16px;
+            text-align: center;
+        }
+        .card-buttons{
+            gap: 1rem;
+        }
+        .card-buttons  button {
+            padding: 5px 10px;
+            
+        }
     }
 }
 
@@ -1395,5 +1412,4 @@
     background-color: #50ff6d;
     color: var(--black);
     transition: 0.3s ease;
-
 }

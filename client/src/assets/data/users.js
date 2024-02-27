@@ -32,7 +32,7 @@ export const writers = [
     city: "India",
   },
   {
-    name: "Pranav",
+    name: "Pranika",
     specialty: "Snapchat" ,
     rating: 1.5,
     img: user2,

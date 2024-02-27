@@ -11,7 +11,7 @@ const DoctorCard = (props) => {
             </div>
             <div className="stats">
                 <div className="patients">
-                    <div className="patient-logo">Journals</div>
+                    <div className="patient-logo">Pages</div>
                     <p>{props.doc.patients}</p>
                 </div>
                 <div className="rating">
