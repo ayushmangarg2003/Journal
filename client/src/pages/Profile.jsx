@@ -48,16 +48,16 @@ const Profile = () => {
                 </div>
                 <div className="data-container">
                     <label htmlFor="name">Gender:</label>
-                    <p id='gender'>{userData.gender}</p>
+                    <p id='gender'>{userData.role}</p>
                 </div>
-                <div className="data-container">
+                {/* <div className="data-container">
                     <label htmlFor="name">Role:</label>
-                    <p id='role'>{userData.role}</p>
-                </div>
-                <div className="data-container">
+                    <p id='role'>{userData.gender}</p>
+                </div> */}
+                {/* <div className="data-container">
                     <label htmlFor="name">Unique Code:</label>
                     <p id='role'>{userData._id}</p>
-                </div>
+                </div> */}
             </div>
         </div>
     )
