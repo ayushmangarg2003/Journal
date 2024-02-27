@@ -1236,11 +1236,14 @@
                 flex-direction: column;
             }
             .img {
-                flex: 1;
+                flex: 3;
+                &::after {
+                    display: none;
+                }
             }
 
             .content {
-                flex: 1;
+                flex: 2;
 
                 h1 {
                     font-size: 30px;
@@ -1267,8 +1270,10 @@
 /* Home Cards */
 .post {
     margin: 3rem 0;
+    color: #151515;
+    text-decoration: none;
     display: flex;
-    gap: 100px;
+    gap: 20px;
     width: 65vw;
 
     &:nth-child(2n + 1) {
@@ -1278,6 +1283,7 @@
     .img {
         flex: 2;
         position: relative;
+        height: 200px;
 
         &::after {
             content: "";
@@ -1338,4 +1344,56 @@
         transition: 0.3s ease;
 
     }
+}
+
+.single-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+.single-img{
+    width: 90%;
+    height: 30vh;
+    object-fit: cover;
+}
+.single-head{
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.single-between{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    width: 90%;
+    padding: 1rem;
+    background-color: rgba(1, 181, 197, .2);
+    align-items: center;
+}
+.single-name{
+    
+}
+.single-email{
+    font-size: 24px;
+    font-style: italic;
+}
+.card-buttons{
+    display: flex;
+    gap: 2rem;
+}
+.card-buttons  button {
+    width: max-content;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #50ff6d;
+    color: var(--black);
+    transition: 0.3s ease;
+
 }

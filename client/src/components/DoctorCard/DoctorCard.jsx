@@ -34,7 +34,7 @@ const DoctorCard = (props) => {
         //         </div>
         //     </div>
         // </div>
-        <div className="post" key={props.doc.name}>
+        <Link className="post" key={props.doc.name} to={`/journals/${props.doc._id}`}>
             <div className="img">
                 <img src={props.doc.img} alt={props.doc.name} />
             </div>
@@ -48,11 +48,10 @@ const DoctorCard = (props) => {
                     <button>Website</button>
                     <button>Rights</button>
                     <button>CC BY-NC-ND</button>
-
                 </div>
 
             </div>
-        </div>
+        </Link>
     )
 }
 

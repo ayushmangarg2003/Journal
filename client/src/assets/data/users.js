@@ -5,6 +5,7 @@ import journal2 from '../images/journal2.webp'
 
 export const doctors = [
   {
+    _id:"abcd",
     name: "Journal of Exceptional Discovery on Education",
     email:"Ayushman Garg University",
     specialty:"Education",
@@ -12,6 +13,7 @@ export const doctors = [
     img: journal2,
   },
   {
+    _id:"abce",
     name: "Journal of New Results in Science",
     email:"Tokat Gaziosmanpasa University",
     specialty:"Science",

@@ -6,7 +6,7 @@ const Footer = () => {
         <div className='footer'>
             <div className="footer-left">
                 <div className="footer-logo">
-                    <div className="footer-logo-img"><i class="fa-solid fa-book"></i></div>
+                    <div className="footer-logo-img"><i className="fa-solid fa-book"></i></div>
                     <div className="footer-logo-name">{COMPANY_NAME_1}<p>{COMPANY_NAME_2}</p></div>
                 </div>
                 <div className="footer-copyright">{COPYRIGHT}</div>
@@ -34,14 +34,14 @@ const Footer = () => {
                 <div className="quick-links">
                     <h1>Quick Links</h1>
                     <Link to={'/'} className='footer-quicklink'>Home</Link>
-                    <Link to={'/doctors'}  className='footer-quicklink'>Journals</Link>
+                    <Link to={'/journals'}  className='footer-quicklink'>Journals</Link>
                     <Link to={'/services'} className='footer-quicklink'>Services</Link>
                     <Link to={'/about'} className='footer-quicklink'>About us</Link>
                 </div>
                 <div className="quick-links">
                     <h1>Support</h1>
                     <Link to={'/register'} className='footer-quicklink'>Register</Link>
-                    <Link to={'/contact'} className='footer-quicklink'>Contact</Link>
+                    <Link to={'/authors'} className='footer-quicklink'>Authors</Link>
                 </div>
             </div>
         </div>

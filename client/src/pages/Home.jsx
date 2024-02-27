@@ -10,7 +10,7 @@ const Home = () => {
       <div className="home-left">
         <h1>{HOME_HEAD}</h1>
         <p>{HOME_DESC}</p>
-        <Link className='home-btn' to={'/doctors'}>{HOMEBTNTEXT}</Link>
+        <Link className='home-btn' to={'/journals'}>{HOMEBTNTEXT}</Link>
         <div className="stats">
           <div className="stat">
             <h2>{YEARS}</h2>

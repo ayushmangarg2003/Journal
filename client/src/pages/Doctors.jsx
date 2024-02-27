@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { doctors } from '../assets/data/users'
 import DoctorCard from '../components/DoctorCard/DoctorCard'
-import { backendLink } from "../index.js"
-import axios from 'axios';
 import Shimmer from '../components/Shimmer/Shimmer';
 
 const Doctors = () => {
